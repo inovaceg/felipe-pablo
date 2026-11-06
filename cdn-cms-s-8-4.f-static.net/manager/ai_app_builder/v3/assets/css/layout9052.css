@@ -5,8 +5,47 @@
 }
 
 .hero-split {
-    background:
-        linear-gradient(115deg, rgba(250, 249, 246, 0.96) 0%, rgba(250, 249, 246, 0.78) 52%, rgba(88, 129, 87, 0.12) 100%);
+    min-height: calc(100vh - 5rem);
+    padding-top: 9rem;
+    padding-bottom: 8rem;
+    background-image: linear-gradient(90deg, #f8f5ef 0%, rgba(248, 245, 239, 0.98) 31%, rgba(248, 245, 239, 0.84) 47%, rgba(248, 245, 239, 0.08) 72%), url('/assets/banner-retrato.png');
+    background-position: center, center 38%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-split > div:nth-of-type(3) {
+    grid-template-columns: 1fr;
+}
+
+.hero-split > div:nth-of-type(3) > div:first-child {
+    max-width: 35rem;
+}
+
+.hero-split h1 {
+    max-width: 34rem;
+    font-size: clamp(3rem, 5vw, 4.2rem);
+    line-height: 1.02;
+}
+
+.hero-split > div:nth-of-type(3) > div:last-child {
+    display: none;
+}
+
+.hero-split .section-kicker {
+    display: none;
+}
+
+.site-header {
+    background: #172b3a;
+    border-color: rgba(255, 255, 255, 0.12);
+    color: #f8f5ef;
+    backdrop-filter: none;
+}
+
+.site-header a,
+.site-header button {
+    color: #f8f5ef;
 }
 
 .orb {
@@ -38,4 +77,18 @@
     background:
         radial-gradient(circle at 8% 16%, rgba(163, 177, 138, 0.2), transparent 24rem),
         linear-gradient(180deg, var(--background-color), var(--surface-color));
+}
+
+@media (max-width: 767px) {
+    .hero-split {
+        min-height: 92vh;
+        padding-top: 8rem;
+        padding-bottom: 6rem;
+        background-image: linear-gradient(90deg, rgba(248, 245, 239, 0.98) 0%, rgba(248, 245, 239, 0.91) 52%, rgba(248, 245, 239, 0.5) 100%), url('/assets/banner-retrato.png');
+        background-position: center, 62% center;
+    }
+
+    .hero-split h1 {
+        font-size: clamp(2.7rem, 11vw, 3.7rem);
+    }
 }
