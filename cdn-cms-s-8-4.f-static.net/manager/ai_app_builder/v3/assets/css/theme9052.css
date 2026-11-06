@@ -1,0 +1,27 @@
+/* Explain: Theme tokens for the serene luxury yoga studio identity */
+:root {
+    --primary-color: #4A6B53;
+    --primary-hover: #A5BA95;
+    --secondary-color: #E9EDDF;
+    --accent-color: #588157;
+    --logo-subtitle-color: #543323;
+    --button-color: #C0CFB2;
+    --background-color: #FAF9F6;
+    --surface-color: #F1F4EB;
+    --footer-bg: #EAEEDF;
+    --text-color: #1F2E23;
+    --text-muted: #4B6353;
+    --border-color: rgba(31, 46, 35, 0.12);
+    --glass-bg: rgba(250, 249, 246, 0.72);
+    --glass-border: rgba(88, 129, 87, 0.32);
+    --nav-bg: rgba(250, 249, 246, 0.78);
+    --field-bg: rgba(255, 255, 255, 0.6);
+    --sage-soft: rgba(88, 129, 87, 0.15);
+    --sage-dark: #3A5A40;
+    --terracotta-soft: rgba(163, 177, 138, 0.22);
+    --shadow-soft: 0 22px 70px rgba(31, 46, 35, 0.08);
+    --shadow-button: 0 16px 36px rgba(88, 129, 87, 0.25);
+    --font-heading: 'Lora', serif;
+    --font-body: 'Montserrat', sans-serif;
+    --font-logo: 'Playfair Display', serif;
+}

@@ -1,0 +1,38 @@
+/* Explain: Base reset and typography defaults for the studio site */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: var(--background-color);
+    color: var(--text-color);
+    scroll-padding-top: 92px;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background:
+        radial-gradient(circle at 12% 18%, rgba(163, 177, 138, 0.25), transparent 26rem),
+        radial-gradient(circle at 88% 8%, rgba(88, 129, 87, 0.15), transparent 24rem),
+        var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-body);
+    text-rendering: optimizeLegibility;
+}
+
+button,
+a,
+select {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+::selection {
+    background: var(--accent-color);
+    color: #ffffff;
+}
